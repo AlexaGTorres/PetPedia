@@ -17,14 +17,14 @@ public class MainActivity extends AppCompatActivity
 
         getSupportActionBar().hide();
 
-       // Intent home = new Intent(MainActivity.this, MainMenu.class);
+       Intent home = new Intent(MainActivity.this, MainMenu.class);
 
         new Handler().postDelayed(new Runnable()
         {
             @Override
             public void run()
             {
-                //startActivity(home);
+                startActivity(home);
                 finish();
             }
         }, 4000);
