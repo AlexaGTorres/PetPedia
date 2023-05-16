@@ -9,4 +9,4 @@ Assignment Requirements Bellow:\
 -Unit tests with at least one instance of regex.\
 -Branching for each new feature.\
 -Database.\
-New feature (gifs and animation).
+-New feature (gifs and animation).
