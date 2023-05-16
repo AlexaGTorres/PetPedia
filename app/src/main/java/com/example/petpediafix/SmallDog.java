@@ -18,6 +18,8 @@ public class SmallDog extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_small_dog);
 
+        getSupportActionBar().hide();
+
         Button btn = (Button)findViewById(R.id.selectOtherButton);
 
         btn.setOnClickListener(new View.OnClickListener()

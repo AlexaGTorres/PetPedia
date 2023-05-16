@@ -20,6 +20,8 @@ public class ListOfAnimals extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_of_animals);
 
+        getSupportActionBar().hide();
+
         listView = (ListView) findViewById(R.id.animalsList);
 
         ArrayList<String> animalList = new ArrayList<>();

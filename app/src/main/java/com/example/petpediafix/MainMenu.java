@@ -16,6 +16,8 @@ public class MainMenu extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
+        getSupportActionBar().hide();
+
         Button btn = (Button)findViewById(R.id.nextScreenBtn);
 
         btn.setOnClickListener(new View.OnClickListener()
