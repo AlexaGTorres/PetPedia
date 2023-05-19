@@ -5,13 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SmallDog extends AppCompatActivity
 {
-
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -20,15 +24,25 @@ public class SmallDog extends AppCompatActivity
 
         getSupportActionBar().hide();
 
-        Button btn = (Button)findViewById(R.id.selectOtherButton);
+        listView = findViewById(R.id.smallDogList);
 
-        btn.setOnClickListener(new View.OnClickListener()
+        ArrayList<String> smallDogs = new ArrayList<>();
+
+        smallDogs.add("Chihuahua");
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, smallDogs);
+
+        listView.setAdapter(arrayAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
             @Override
-            public void onClick(View view)
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id)
             {
-                Intent intent = new Intent(SmallDog.this, ListOfAnimals.class);
-                startActivity(intent);
+                if (position == 0)
+                {
+                    startActivity(new Intent(SmallDog.this, Chihuahua.class));
+                }
             }
         });
     }
