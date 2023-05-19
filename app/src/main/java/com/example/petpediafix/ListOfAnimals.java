@@ -26,14 +26,14 @@ public class ListOfAnimals extends AppCompatActivity
 
         ArrayList<String> animalList = new ArrayList<>();
 
-        animalList.add("Dog 1");
-        animalList.add("Dog 2");
-        animalList.add("animal");
-        animalList.add("animal");
-        animalList.add("animal");
-        animalList.add("animal");
-        animalList.add("animal");
-        animalList.add("animal");
+        animalList.add("Small Dogs");
+        animalList.add("Big Dogs");
+        animalList.add("Frogs");
+        animalList.add("Lizards");
+        animalList.add("Cats");
+        animalList.add("Sheep");
+        animalList.add("Cows");
+        animalList.add("Pigs");
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, animalList);
 
