@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class ListOfAnimals extends AppCompatActivity
 {
     ListView listView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -21,6 +22,8 @@ public class ListOfAnimals extends AppCompatActivity
         setContentView(R.layout.activity_list_of_animals);
 
         getSupportActionBar().hide();
+
+        listView = findViewById(R.id.animalsList);
 
         listView = (ListView) findViewById(R.id.animalsList);
 
