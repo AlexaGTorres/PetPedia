@@ -12,7 +12,7 @@
         android:id="@+id/dogImage"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:srcCompat="@drawable/petpedia"
+        app:srcCompat="@drawable/smalldog"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"/>
 
