@@ -26,7 +26,7 @@ public class Chihuahua extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(Chihuahua.this, ListOfAnimals.class);
+                Intent intent = new Intent(Chihuahua.this, SmallDog.class);
                 startActivity(intent);
             }
         });
