@@ -45,5 +45,17 @@ public class SmallDog extends AppCompatActivity
                 }
             }
         });
+
+        Button btn = (Button)findViewById(R.id.goBackButton);
+
+        btn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(SmallDog.this, ListOfAnimals.class);
+                startActivity(intent);
+            }
+        });
     }
 }

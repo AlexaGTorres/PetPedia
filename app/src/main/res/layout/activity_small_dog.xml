@@ -23,5 +23,19 @@
     <ListView
         android:id="@+id/smallDogList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="500dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:backgroundTint="#dcd7c9"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lggothic"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
 </LinearLayout>
